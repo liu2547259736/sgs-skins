@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "version": "2026.11.12",
+  "updated_at": "2026-11-12T22:45:34+08:00",
+  "cdn_base": "https://cdn.jsdelivr.net/gh/liu2547259736/sgs-skins@main/",
+  "counts": {
+    "files": 12901,
+    "bytes": 740901848
+  },
+  "versions": {
+    "gjf": {
+      "files": 1031,
+      "bytes": 37400042
+    },
+    "hlsgs": {
+      "files": 752,
+      "bytes": 72597868
+    },
+    "msgs": {
+      "files": 1519,
+      "bytes": 112443784
+    },
+    "sgs": {
+      "files": 4214,
+      "bytes": 175061198
+    },
+    "sgsol": {
+      "files": 4473,
+      "bytes": 293929588
+    },
+    "wxmini": {
+      "files": 912,
+      "bytes": 49469368
+    }
+  },
+  "fingerprint": "e0bc9fcf9c29b38149b8fc1739abad04df72c4f57ccfba4a8545a91d020b9b7f"
+}

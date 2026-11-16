@@ -26,7 +26,9 @@ GH = 'liu2547259736/sgs-skins'
 BRANCH = 'main'
 STATE = ROOT / 'tools' / 'sync-state.json'
 MANIFEST = ROOT / 'manifest.json'
-CDN = 'https://cdn.jsdelivr.net/gh/%s@%s/' % (GH, BRANCH)
+# cdn.jsdelivr.net 在国内直连 TLS 握手失败（2026-11-12/16 实测），
+# gcore / testingcf 可直连；manifest 的 cdn_base 与 App 默认源必须一致。
+CDN = 'https://gcore.jsdelivr.net/gh/%s@%s/' % (GH, BRANCH)
 
 
 def run(cmd, timeout=1800):

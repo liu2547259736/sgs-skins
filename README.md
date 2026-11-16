@@ -25,7 +25,7 @@ tools/sync.py          单向同步脚本
 ```
 
 路径与 `sgs-data/skins/*.json` 里的 `sk` 字段**一一对应**，例如
-`images/gjf/sk/104.webp` → `https://cdn.jsdelivr.net/gh/liu2547259736/sgs-skins@main/images/gjf/sk/104.webp`。
+`images/gjf/sk/104.webp` → `https://gcore.jsdelivr.net/gh/liu2547259736/sgs-skins@main/images/gjf/sk/104.webp`。
 
 ## 为什么不压缩成 zip
 
@@ -39,11 +39,15 @@ tools/sync.py          单向同步脚本
 资源根（App 里配置，设置页可覆盖）：
 
 ```
-https://cdn.jsdelivr.net/gh/liu2547259736/sgs-skins@main/
+https://gcore.jsdelivr.net/gh/liu2547259736/sgs-skins@main/
 ```
 
+> 默认用 `gcore` 镜像：`cdn.jsdelivr.net` 在国内直连 TLS 握手失败
+> （2026-11-12、11-16 实测 HTTP 000，挂代理才 200），gcore / testingcf 可直连。
+> 图片是 `<img>` 单源直取、没有回退机会，所以 App 的默认源必须可直连。
+
 原页面图片 URL 带 `?iv=N` 破缓存参数，壳做 302 重定向时必须原样保留 query。
-需要固定版本时可用 tag：`https://cdn.jsdelivr.net/gh/liu2547259736/sgs-skins@skins-v2026.11.12/`。
+需要固定版本时可用 tag：`https://gcore.jsdelivr.net/gh/liu2547259736/sgs-skins@skins-v2026.11.12/`。
 
 ## 同步
 

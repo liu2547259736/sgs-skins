@@ -2,7 +2,7 @@
   "schema": 1,
   "version": "2026.11.12",
   "updated_at": "2026-11-12T22:45:34+08:00",
-  "cdn_base": "https://cdn.jsdelivr.net/gh/liu2547259736/sgs-skins@main/",
+  "cdn_base": "https://gcore.jsdelivr.net/gh/liu2547259736/sgs-skins@main/",
   "counts": {
     "files": 12901,
     "bytes": 740901848
